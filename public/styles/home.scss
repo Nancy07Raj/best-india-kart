@@ -1,0 +1,47 @@
+.card-div{
+    .card-header{
+        background-color: $light-blue;
+        .btn-primary{
+            text-decoration: none;
+            color: white;
+            border: none;
+            background-color:  $light-blue;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .btn-active{
+            background-color: $dark-blue;
+        }
+    }
+    .card{
+        width: 16rem;
+        border: none;
+        box-shadow: 1px 1px 14px 0px rgba(0, 0, 0, 0.12);
+        .card-img-top{
+            width: 65%;
+        }
+        .card-body{
+            .card-title{
+                font-weight: 700;
+            }
+        }
+    }
+    .view-more-btn{
+        .btn-primary{
+            background-color: $light-blue;
+            border: none;
+            border-radius: 0;
+        }
+    }
+}
+.brochure{
+    background-color: $light-blue;
+    .content{
+        h3{
+            font-weight: 700;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}

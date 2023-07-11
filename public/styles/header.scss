@@ -1,0 +1,90 @@
+.header{
+    .top-header{
+        background-color: $gray;
+        .social-media{
+        }
+        .best-india-outer{
+            .best-india{
+                h6{
+                    margin: 0;
+                }
+                p{
+                    margin: 0;
+                    color: $text-blue;
+                    font-size: 12px;
+                }        
+            }
+            &::before{
+                content: "|";
+                font-size: 44px;
+                color: #CECECE;
+                font-weight: 100;
+            }
+        
+    }
+        .reg-btn{
+            .btn-primary{
+                background-color: $dark-blue;
+                border: 0;
+            }
+            &::before{
+                content: "|";
+                font-size: 44px;
+                color: #CECECE;
+                font-weight: 100;
+            }
+        }
+        
+    }
+    .menus-top{
+        .call{
+            &::after{
+                content: "|";
+                font-size: 44px;
+                color: #CECECE;
+                font-weight: 100;
+            }
+            .call-us{
+                h6{
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 0;
+                }
+                p{
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $text-blue;
+                }
+            }
+        }
+        .mail-us{
+            h6{
+                font-size: 14px;
+                font-weight: 500;
+                margin: 0;
+            }
+            p{
+                margin: 0;
+                font-size: 16px;
+                font-weight: 700;
+                color: $text-blue;
+            }
+        }
+        .search{
+            background-color: $dark-blue;
+            width: 40%;
+            border: 1px solid $dark-blue;
+            input{
+                background-color: #F2F4F6;
+                color: #B6B4B4;
+                border-radius: 0px;
+                 }
+            .btn-primary{
+                background-color: $dark-blue;
+                border: none;
+            }
+        }
+        
+    }
+}
