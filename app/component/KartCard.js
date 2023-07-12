@@ -14,11 +14,20 @@ export default function KartCard({ heading, data }) {
         {data?.map((f) => (
           <Col key={f?.id} lg={3} md={6} className="pb-4">
             <Card
-              style={{ width: "18rem" }}
+              style={{ width: "16rem" }}
               className="d-flex align-items-center justify-content-center"
             >
-              <Card.Img variant="top" src={f?.img} />
-              <Card.Body className="d-flex align-items-center flex-column">
+              <div className="card-img">
+                <Card.Img variant="center" src={f?.img} />
+              </div>
+              {f?.icons && (
+                <div className="card-icon d-flex flex-column">
+                  <Image src="/images/icons/heart.png" alt="heart" />
+                  <Image src="/images/icons/eye.png" alt="eye" />
+                  <Image src="/images/icons/cart.png" alt="cart" />
+                </div>
+              )}
+              <Card.Body className="d-flex align-items-center justify-content-end flex-column">
                 <Card.Text>
                   {Array(f?.star).fill(
                     <Image src="/images/icons/star.png" alt="star" />

@@ -14,11 +14,30 @@
         }
     }
     .card{
-        width: 16rem;
         border: none;
         box-shadow: 1px 1px 14px 0px rgba(0, 0, 0, 0.12);
-        .card-img-top{
-            width: 65%;
+        max-height: 16rem;
+        min-height: 16rem;
+        .card-img{
+            width: 60%;
+            margin-top: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .card-img-center{
+                width: 80%;
+                // height: 30%;
+                // padding: 1rem 0;
+            }
+        }
+        .card-icon{
+            margin-top: -73%;
+            margin-right: -83%;
+            img{
+                background-color: $light-blue;
+                margin: 5px 0;
+                padding: 5px;
+            }
         }
         .card-body{
             .card-title{
@@ -37,11 +56,25 @@
 .brochure{
     background-color: $light-blue;
     .content{
+        color: white;
+        padding: 3rem 4rem;
         h3{
             font-weight: 700;
         }
         p{
             margin: 0;
+            font-weight: 300;
         }
     }
+    .brochure-btn-col{
+        padding: 4rem 0;
+    .brochure-btn{
+        background-color: $dark-orange;
+        
+        .btn-primary{
+            border: none;
+            background-color: $dark-orange;
+        }
+    }
+}
 }

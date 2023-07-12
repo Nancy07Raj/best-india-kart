@@ -3,7 +3,9 @@
     .menu{
         // height: 50px;
         background-color: #0443C0;
+        padding: 0 4rem;
         .menu-left{
+            // background-color: #0443C0;
             .active-path{
                 background-color: $dark-blue;
             }
@@ -12,8 +14,23 @@
                 color: white;
                 padding: 0 1rem;
             }
+            .border-right{
+                position: relative;
+                &::after{
+                    content: " ";
+                    position: absolute;
+                    border-left: 1px solid $platinum-silver;
+                    top: 30%;
+                    right: 0;
+                    height: 30%;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+
+            }
         }
         .menu-right{
+            // background-color: #0443C0;
             justify-content: space-between;
             a{
                 text-decoration: none;
@@ -32,8 +49,8 @@
                     border-radius: 20px;
                     position: absolute;
                     // top: -5px;
-                    left: 28px;
-                    bottom: 33px;
+                    left: 65%;
+                    bottom: 50%;
                 }
             }
         }

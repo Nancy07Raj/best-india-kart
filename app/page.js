@@ -6,8 +6,9 @@ import Header from "./component/Header";
 import "@/public/styles/header.scss";
 import Menu from "./component/Menu";
 import "@/public/styles/home.scss";
-import { FastenersCard } from "@/public/static/lib";
+import { FastenersCard, ToolCard } from "@/public/static/lib";
 import KartCard from "./component/KartCard";
+import Footer from "./component/Footer";
 
 export default function Home() {
   return (
@@ -20,12 +21,25 @@ export default function Home() {
         </div>
         <KartCard heading="Fasteners" data={FastenersCard} />
       </Container>
-      <div className="brochure">
-        <div className="content d-flex flex-column">
+      <Row className="brochure align-items-center">
+        <Col lg={8} className="content d-flex flex-column">
           <h3>Requirements, Information or Something else?</h3>
           <p>We Please be so kind and send us your enquiry.</p>
-        </div>
-      </div>
+        </Col>
+        <Col
+          lg={4}
+          className="brochure-btn-col d-flex align-item-center justify-content-center"
+        >
+          <div className="brochure-btn d-flex align-items-center p-2">
+            <Button type="button">Download Brochure</Button>
+            <Image src="/images/icons/arrow.png" alt="arrow" />
+          </div>
+        </Col>
+      </Row>
+      <Container>
+        <KartCard heading="Tools" data={ToolCard} />
+      </Container>
+      <Footer />
     </>
   );
 }

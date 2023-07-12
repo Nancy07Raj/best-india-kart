@@ -1,0 +1,47 @@
+.footer{
+    background-color: $light-blue;
+    color: white;
+    .top{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        padding: 0 4rem;
+        .image-container{
+            .image2, .image3{
+                margin-right: -10px;
+            }
+        }
+        .stay-connected{
+            h3{
+                font-weight: 700;
+            }
+            p{
+                margin: 0;
+                font-weight: 300;
+            }
+        }
+        .form{
+            background-color: $gray;
+            input{
+                background-color: $gray;
+            }
+            .btn-primary{
+                background-color: $dark-orange;
+                border: none;
+                border-radius: 0;
+                width: 40%;
+            }
+        }
+    }
+    .bottom{
+        padding: 0 4rem;
+        color: white;
+        .address{
+            h3{
+                font-weight: 500;
+            }
+            p{
+                margin: 0;
+            }
+        }
+
+    }
+}
