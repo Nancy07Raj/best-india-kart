@@ -135,3 +135,25 @@ export const ToolCard = [
     img: "/images/tools/img2.png",
   },
 ];
+
+export const RivetCard = [
+  {
+    id: 1,
+    name: "Open GRIP Rivetnut",
+    star: 5,
+    img: "/images/tools/img1.png",
+    icons: true,
+  },
+  {
+    id: 2,
+    name: "Closed GRIP Rivetnut",
+    star: 5,
+    img: "/images/tools/img2.png",
+  },
+  {
+    id: 3,
+    name: "Splined",
+    star: 5,
+    img: "/images/tools/img1.png",
+  },
+];

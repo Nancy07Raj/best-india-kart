@@ -1,0 +1,25 @@
+.brochure {
+  background-color: $light-blue;
+  .content {
+    color: white;
+    padding: 3rem 4rem;
+    h3 {
+      font-weight: 700;
+    }
+    p {
+      margin: 0;
+      font-weight: 300;
+    }
+  }
+  .brochure-btn-col {
+    padding: 4rem 0;
+    .brochure-btn {
+      background-color: $dark-orange;
+
+      .btn-primary {
+        border: none;
+        background-color: $dark-orange;
+      }
+    }
+  }
+}

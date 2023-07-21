@@ -2,6 +2,7 @@
 import { Row, Col, Image, Button } from "react-bootstrap";
 import { Input } from "antd";
 import "@/public/styles/footer.scss";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -36,7 +37,7 @@ export default function Footer() {
           </div>
         </Col>
       </Row>
-      <Row className="bottom justify-content-center align-items-center py-5">
+      <Row className="middle justify-content-center align-items-center py-5">
         <Col
           lg={4}
           md={4}
@@ -68,6 +69,100 @@ export default function Footer() {
           <p>+91 6383735782</p>
         </Col>
       </Row>
+      <Row className="bottom justify-content-around align-items-start py-5">
+        <Col lg={2} className="logo-img">
+          <Image src="/images/login-logo.png" alt="logo" />
+        </Col>
+        <Col lg={2} className="d-flex flex-column">
+          <h5>Customer Service</h5>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Register</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">How to use</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Catalog Request</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Inquiry</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Sitemap</Link>
+          </div>
+        </Col>
+        <Col lg={3} className="d-flex flex-column">
+          <h5>My Account</h5>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Request a Quote</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">My Quote / Order History</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Cart</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">My Page</Link>
+          </div>
+        </Col>
+        <Col lg={3} className="d-flex flex-column">
+          <h5>About Best Indiakart</h5>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">About Us</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Shipping Policy</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Refunds & Cancellations</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Privacy Policy</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Terms & Conditions</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Blogs</Link>
+          </div>
+          <div className="d-flex">
+            <Image className="me-2" src="/images/icons/mask.png" alt="mask" />{" "}
+            <Link href="#">Contact Us</Link>
+          </div>
+        </Col>
+        <Row className="bottom-end py-3">
+          <Col lg={{ span: 3, offset: 8 }}>
+            <p className="m-0">We Accept the Major Cards</p>
+            <div className="member-card d-flex">
+              <Image src="/images/icons/visa.png" alt="visa" />
+              <Image src="/images/icons/master-card.png" alt="visa" />
+              <Image src="/images/icons/american-express.png" alt="visa" />
+            </div>
+          </Col>
+        </Row>
+      </Row>
+      <div className="copy-right d-flex justify-content-center align-items-center py-2">
+        <p className="m-0">
+          © 2023 .All Right Reserved. Design and Developed by{" "}
+          <Link href="https://www.webdads2u.com/">WEBDADS2U PVT LTD</Link>
+        </p>
+      </div>
     </div>
   );
 }

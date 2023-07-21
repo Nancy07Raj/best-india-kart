@@ -3,9 +3,8 @@
 import { Container, Image, Button, Row, Col, Card } from "react-bootstrap";
 import styles from "./page.module.css";
 import Header from "./component/Header";
-import "@/public/styles/header.scss";
 import Menu from "./component/Menu";
-import "@/public/styles/home.scss";
+import "@/public/styles/home-page.scss";
 import { FastenersCard, ToolCard } from "@/public/static/lib";
 import KartCard from "./component/KartCard";
 import Footer from "./component/Footer";
@@ -14,12 +13,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Menu />
+      <Menu isOpen={true} />
       <Container>
         <div className="d-flex justify-content-end">
           <Image src="/images/banner/banner-1-1.jpg" alt="banner" />
         </div>
-        <KartCard heading="Fasteners" data={FastenersCard} />
+        <KartCard heading="Fasteners" subHeading={true} data={FastenersCard} />
       </Container>
       <Row className="brochure align-items-center">
         <Col lg={8} className="content d-flex flex-column">

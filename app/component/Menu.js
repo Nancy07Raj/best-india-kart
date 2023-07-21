@@ -10,50 +10,62 @@ const text = [
   {
     id: 1,
     name: "Rivet",
+    path: "/home/rivet",
   },
   {
     id: 2,
     name: "Rivet Nuts",
+    path: "/home/rivet",
   },
   {
     id: 3,
     name: "Cage Nuts",
+    path: "/home/rivet",
   },
   {
     id: 4,
     name: "RivThreaded Fastenerset",
+    path: "/home/rivet",
   },
   {
     id: 5,
     name: "Self Piercing Rivet",
+    path: "/home/rivet",
   },
   {
     id: 6,
     name: "Weld Stud",
+    path: "/home/rivet",
   },
   {
     id: 7,
     name: "Weld Nuts",
+    path: "/home/rivet",
   },
   {
     id: 8,
     name: "Threaded Coils",
+    path: "/home/rivet",
   },
   {
     id: 9,
     name: "Trilobular screw",
+    path: "/home/rivet",
   },
   {
     id: 10,
     name: "Sealing Plug",
+    path: "/home/rivet",
   },
   {
     id: 12,
     name: "Self  Clinging Stud",
+    path: "/home/rivet",
   },
   {
     id: 13,
     name: "Self  Clinging Nut",
+    path: "/home/rivet",
   },
 ];
 
@@ -62,10 +74,10 @@ const items = [
     key: "1",
     label: "Fasteners",
     children: text.map((c) => (
-      <div className="d-flex" key={c.id}>
+      <Link className="d-flex" href={c?.path} key={c.id}>
         <Image src="/images/icons/mask.png" alt="mask" />{" "}
         <p className="ms-1">{c.name}</p>
-      </div>
+      </Link>
     )),
   },
   {
@@ -75,16 +87,23 @@ const items = [
   },
 ];
 
-export default function Menu() {
-  const [showMenu, setShowMenu] = useState(true);
+export default function Menu({ isOpen }) {
+  const [showMenu, setShowMenu] = useState(isOpen);
   const pathname = usePathname();
   return (
     <div className="menu-div">
-      <Row className="menu d-flex mt-2 px-5 justify-content-end">
+      <Row className="menu d-flex mt-2 px-5 justify-content-between">
+        <Col
+          lg={3}
+          md={3}
+          className="menu-left d-flex justify-content-center"
+        ></Col>
         <Col lg={6} md={6} className="menu-left d-flex justify-content-center">
           <Link
             href="/"
-            className={`py-3 ${pathname === "/" && "active-path"}`}
+            className={`py-3 ${
+              (pathname === "/" || pathname.includes("home")) && "active-path"
+            }`}
           >
             Home
           </Link>

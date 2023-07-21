@@ -1,6 +1,7 @@
 "use client";
 import { Row, Col, Container, Image, Button } from "react-bootstrap";
 import { Input, Collapse } from "antd";
+import "@/public/styles/header.scss";
 
 export default function Header() {
   return (

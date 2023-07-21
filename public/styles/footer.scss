@@ -1,47 +1,82 @@
-.footer{
+.footer {
+  background-color: #f3f1f1;
+  .top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0 4rem;
+    color: white;
+    background-color: $light-blue;
+    .image-container {
+      .image2,
+      .image3 {
+        margin-right: -10px;
+      }
+    }
+    .stay-connected {
+      h3 {
+        font-weight: 700;
+      }
+      p {
+        margin: 0;
+        font-weight: 300;
+      }
+    }
+    .form {
+      background-color: $gray;
+      input {
+        background-color: $gray;
+      }
+      .btn-primary {
+        background-color: $dark-orange;
+        border: none;
+        border-radius: 0;
+        width: 40%;
+      }
+    }
+  }
+  .middle {
+    padding: 0 4rem;
+    color: white;
+    background-color: $light-blue;
+    .address {
+      h3 {
+        font-weight: 500;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .bottom {
+    background-color: #f3f1f1;
+    padding: 0 4rem;
+    margin-top: 1rem;
+    .logo-img {
+      margin-top: -35px;
+    }
+    .bottom-end {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: end;
+      background-color: #f3f1f1;
+      padding: 0 4rem;
+      .member-card {
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        img {
+          padding: 10px 5px;
+          height: 25%;
+        }
+      }
+    }
+  }
+  .copy-right {
+    padding: 0 4rem;
     background-color: $light-blue;
     color: white;
-    .top{
-        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-        padding: 0 4rem;
-        .image-container{
-            .image2, .image3{
-                margin-right: -10px;
-            }
-        }
-        .stay-connected{
-            h3{
-                font-weight: 700;
-            }
-            p{
-                margin: 0;
-                font-weight: 300;
-            }
-        }
-        .form{
-            background-color: $gray;
-            input{
-                background-color: $gray;
-            }
-            .btn-primary{
-                background-color: $dark-orange;
-                border: none;
-                border-radius: 0;
-                width: 40%;
-            }
-        }
+    a {
+      text-decoration: none;
     }
-    .bottom{
-        padding: 0 4rem;
-        color: white;
-        .address{
-            h3{
-                font-weight: 500;
-            }
-            p{
-                margin: 0;
-            }
-        }
-
-    }
+  }
 }
